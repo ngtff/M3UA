@@ -1,0 +1,31 @@
+HostAddressType=IPv4
+HostAddress=192.160.1.3
+HostAddress=192.168.1.11
+# if SG will connect then enable HostPort
+# HostPort=2906
+HostPort=0
+HostApplicationId=456
+HostAspUpAckTimer=2
+HostAspTrafficModeType=1
+HostPointCode=410
+# multiple SG may be connect to the AS/ASP
+# to validate them require ASP info foreach SG as below
+#-------------------
+# ASP config should begin with ASPId
+ASPId=1
+ASPLocalPointCode=410
+ASPRoutingContext=35
+ASPRoutingContext=36
+ASPRoutingContext=0
+ASPSGAddressType=IPv4
+ASPSGPrimaryAddress=192.160.1.3
+ASPSGSecondaryAddress=192.168.1.11
+# force ASP to connect to SG, when ASPSGConnect=1
+ASPSGConnect=1
+# if ASP needs to connect and establsih connection with SG then we need ASPSGPort
+# or when ASP will listen, needs to enable at HostPort 
+# or when SG connects to ASP can validate sgport by ASPSGPort
+ASPSGPort=2905
+# if client should have fixed client port then configure ASPSGClientPort
+ASPSGClientPort=2904
+

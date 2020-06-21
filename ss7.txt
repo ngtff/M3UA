@@ -1,0 +1,27 @@
+HostAddressType=IPv4
+HostPort=2905
+HostAddress=192.160.1.3
+HostAddress=192.168.1.11
+HostSS7NodeType=SG
+HostPointCode=400
+SGRoutingContext=35
+SGRoutingKeyOPC=390
+SGRoutingKeyDPC=410
+SGRoutingKeySIO=3
+SGRoutingContext=18
+SGRoutingKeyOPC=410
+SGRoutingKeyDPC=390
+SGRoutingKeySIO=3
+#-------------------
+# ASP config should begin with ASPId
+ASPId=1
+ASPLocalPointCode=390
+ASPRoutingContext=35
+ASPSGAddressType=IPv4
+ASPSGPrimaryAddress=192.160.1.3
+ASPSGSecondaryAddress=192.168.1.11
+# force SG to connect to ASP, when ASPSGConnect=1
+ASPSGConnect=0
+ASPSGPort=2906
+ASPSGClientPort=0
+#-------------------
