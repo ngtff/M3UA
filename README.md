@@ -14,4 +14,4 @@ Single ASP serving multiple AS
 
 easily handles 500 messages per second. 
 
-For Commercial use or any other support Please contact ngtff@hotmail.com
+For Commercial use or any other support please contact ngtff@hotmail.com
