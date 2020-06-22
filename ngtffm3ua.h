@@ -30,6 +30,7 @@
 #define NGTFF_MESSAGE_TYPE__XUNITDATA				17
 
 
+
 typedef struct __ngtff_sai
 {
 	uint8_t pci: 1;
@@ -124,6 +125,7 @@ void __ngtff_makeTimeStamp( char * datestring);
 
 int __ngtff_ss7__send_tm_inactive( uint32_t aspId);
 int __ngtff_ss7__send_sm_aspdown( uint32_t aspId);
+
 
 #endif
 
