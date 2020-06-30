@@ -2,17 +2,15 @@
 
 Dependends on LK-SCTP
 
-A Simple SS7 M3UA Protocol Stack Providing below Features
+SS7 M3UA Protocol Stack Providing below Features
 
 Supports all the functionality specified in RFC 4666
 
-Supports Only ASP mode of communication
+Supports Multiple ASP in single AS
 
-Multiple ASP in single AS
+Supports Single ASP serving multiple AS
 
-Single ASP serving multiple AS
-
-easily handles 500 messages per second. 
+Handles 3000+ messages per second. 
 
 For commercial use, license key is required.  
 please contact ngtff@hotmail.com 
