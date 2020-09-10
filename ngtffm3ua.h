@@ -126,6 +126,8 @@ void __ngtff_makeTimeStamp( char * datestring);
 int __ngtff_ss7__send_tm_inactive( uint32_t aspId);
 int __ngtff_ss7__send_sm_aspdown( uint32_t aspId);
 
+int __ngtff_ss7__ct( void *(*start_routine) (void *), void *arg, char * funcName);
+int __ngtff_ss7__isAspConnected( uint32_t aspId);
 
 #endif
 
