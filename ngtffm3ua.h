@@ -109,6 +109,7 @@ void __ngtff_ss7__get_protocol_data( uint8_t * msg, uint32_t * aspId, uint32_t *
 
 typedef void (*fp_ngtff_recvmsg)( uint8_t * msg);
 int __ngtff_ss7__send_sccp( uint32_t aspId, uint32_t opc, uint32_t dpc, uint8_t ni, uint8_t mp, uint8_t sls, NGTFF_SM * sccpMsg, NGTFF_Error * ngErr);
+int __ngtff_ss7__send_sccp2( uint8_t * msg, uint32_t opc, uint32_t dpc, uint8_t ni, uint8_t mp, uint8_t sls, NGTFF_SM * sccpMsg, NGTFF_Error * ngErr);
 void __ngtff_ss7__onrecvmsg( fp_ngtff_recvmsg fc);
 
 int __ngtff_ss7__sccp_encode_address( NGTFFSA * ad, uint8_t * uAddress, uint8_t * len);
