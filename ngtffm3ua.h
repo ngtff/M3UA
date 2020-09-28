@@ -107,6 +107,11 @@ uint32_t __ngtff_ss7__get_localPointCode();
 
 void __ngtff_ss7__get_protocol_data( uint8_t * msg, uint32_t * aspId, uint32_t * opc, uint32_t * dpc, uint8_t * ni, uint8_t * mp, uint8_t * sls);
 
+int __ngtff_ss7__findAspByDPC( uint32_t dpc, uint32_t ** aspIds);
+
+//return 1 on Active
+int __ngtff_ss7__isAspActive( uint32_t aspId);
+
 typedef void (*fp_ngtff_recvmsg)( uint8_t * msg);
 int __ngtff_ss7__send_sccp( uint32_t aspId, uint32_t opc, uint32_t dpc, uint8_t ni, uint8_t mp, uint8_t sls, NGTFF_SM * sccpMsg, NGTFF_Error * ngErr);
 int __ngtff_ss7__send_sccp2( uint8_t * msg, uint32_t opc, uint32_t dpc, uint8_t ni, uint8_t mp, uint8_t sls, NGTFF_SM * sccpMsg, NGTFF_Error * ngErr);
